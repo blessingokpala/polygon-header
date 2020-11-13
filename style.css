@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero_image {
+  height: 100vh;
+  background: url("./water.jpg") no-repeat center center/cover;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+  border: #ef8a17 solid 0.7em;
+}
+.hero_image h1 {
+  color: #fff;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 20%; /* To adjust the position of the h1 as desired. 100% positions it to the center. But the rest of the properties from display to margin must also be included */
+}
+.container {
+  height: 60vh;
+}
+/* bigger devices (landscape tablets, ipad, less than 992px) */
+@media (max-width: 992px) {
+  .hero_image h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+  }
+}
